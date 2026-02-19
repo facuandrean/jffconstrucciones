@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Grupo JFF</title>
+    <title>JFF Construcciones</title>
 
     <meta name="descripcion"
-        content="¡Bienvenidos! Somos JFF Construcciones, una empresa dedicada a brindar asesoramiento manual y personalizado sobre construcciones y materiales de piletas.">
+        content="¡Bienvenidos! Somos JFF Construcciones, una empresa dedicada a brindar asesoramiento manual y personalizado sobre construcciones y remodelaciones.">
     <link rel="canonical" href="https://jffconstrucciones.com/">
     <!-- <link rel="shortcut icon" href="https://jffconstrucciones.com/assets/favicon.png" type="image/x-icon"> -->
     <!-- <link rel="apple-touch-icon" href="https://jffconstrucciones.com/assets/favicon.png"> -->
@@ -21,7 +21,7 @@
         content="https://facuandrean.github.io/portafolio-cv/assets/hero-image-4.jpg">
     <meta property="og:url" name="twitter:url" content="https://jffconstrucciones.com/">
     <meta property="og:description" name="twitter:description"
-        content="¡Bienvenidos! Somos JFF Construcciones, una empresa dedicada a brindar asesoramiento manual y personalizado sobre construcciones y materiales de piletas.">
+        content="¡Bienvenidos! Somos JFF Construcciones, una empresa dedicada a brindar asesoramiento manual y personalizado sobre construcciones y remodelaciones.">
     <meta property="og:type" content="website">
 
     <!-- DNS prefetch and preconnect for external resources -->
@@ -308,30 +308,38 @@
 
             <div class="write-us">
 
-                <p>Puedes escribirnos...</p>
-
                 <form action="https://formspree.io/f/xrealrpo" method="POST" class="contact-form">
 
-                    <input type="text" name="name" placeholder="Nombre Completo"
-                        title="Nombre sólo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                    <label for="name">Nombre Completo <b style="color: red; font-weight: 500;">*</b></label>
+                    <input type="text" name="name" id="name" placeholder="Ej.: Juan Perez"
+                        title="El campo Nombre sólo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
                         required>
+                    <div class="contact-form-group-separator"></div>
 
-                    <input type="email" name="email" placeholder="E-mail"
+                    <label for="email">E-mail <b style="color: red; font-weight: 500;">*</b></label>
+                    <input type="email" name="email" id="email" placeholder="Ej.: juanperez@email.com"
                         title="E-mail incorrecto. Debe ser de la forma: example@example.example"
                         pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    <div class="contact-form-group-separator"></div>
 
-                    <input type="tel" name="tel" placeholder="Teléfono" title="Solo se aceptan números."
+                    <label for="tel">Teléfono <b style="color: red; font-weight: 500;">*</b></label>
+                    <input type="tel" name="tel" id="tel" placeholder="Ej.: 3512345678" title="Solo se aceptan números."
                         pattern="^[0-9]+$" required>
 
-                    <input type="text" name="subject" placeholder="Asunto" title="El asunto es requerido" required>
+                    <div class="contact-form-group-separator"></div>
+                    <label for="subject">Asunto <b style="color: red; font-weight: 500;">*</b></label>
+                    <input type="text" name="_subject" id="subject" placeholder="Ej.: Presupuesto" title="El asunto es requerido" required>
+                    <div class="contact-form-group-separator"></div>
 
-                    <textarea name="comments" cols="20" rows="5" placeholder="Mensaje" data-pattern="^.{1,255}$"
+                    <label for="comments">Mensaje <b style="color: red; font-weight: 500;">*</b></label>
+                    <textarea name="comments" id="comments" cols="20" rows="5" placeholder="Ej.: Hola, quisiera saber..." data-pattern="^.{1,255}$"
                         title="Tu comentario no debe exceder los 255 caracteres." required></textarea>
+                    <div class="contact-form-group-separator"></div>
 
                     <input type="submit" value="ENVIAR CONSULTA">
 
                     <div class="contact-form-loader none">
-                        <img src="assets/icons/spinning-circles.svg" alt="Cargando">
+                        <span class="loader"></span>
                     </div>
 
                     <div class="contact-form-response none">
@@ -341,78 +349,59 @@
                 </form>
 
             </div>
-
-            <div class="contact">
-
-                <p>... O puedes contactarnos!</p>
-
-                <div class="contact-info">
-
-                    <div class="info">
-
-                        <div class="info-img">
-                            <img src="assets/icons/call-outline.svg" alt="Teléfono">
-                        </div>
-
-                        <div class="info-text">
-                            <h3>Teléfonos</h3>
-                            <p> Un número de teléfono </p>
-                        </div>
-
-                    </div>
-
-                    <div class="info">
-
-                        <div class="info-img">
-                            <img src="assets/icons/logo-whatsapp.svg" alt="Whatsapp">
-                        </div>
-
-                        <div class="info-text">
-                            <h3>Whatsapp</h3>
-                            <small><a href="tel:3516136916">+54 9 351 613-6916</a></small>
-                        </div>
-
-                    </div>
-
-                    <div class="info">
-
-                        <div class="info-img">
-                            <img src="assets/icons/mail-outline.svg" alt="E-mail">
-                        </div>
-
-                        <div class="info-text">
-                            <h3>E-mail</h3>
-                            <small><a href="mailto:jffconstrucciones@gmail.com">grupojff@gmail.com</a></small>
-                        </div>
-
-                    </div>
-
-                    <div class="info">
-
-                        <div class="info-img">
-                            <img src="assets/icons/time-outline.svg" alt="Horario">
-                        </div>
-
-                        <div class="info-text">
-                            <h3>Horarios</h3>
-                            <p>Un horario</p>
-                            <p>U otro</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
 
     </main>
 
     <footer class="footer">
+        <div class="footer-container-info">
+            <div class="footer-info">
+                <div class="footer-info-section">
+                    <h3>Contacto</h3>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (234) 567-890</span>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@empresa.com</span>
+                    </div>
+                </div>
+
+                <div class="footer-info-section">
+                    <h3>Ubicación</h3>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Córdoba, Argentina</span>
+                    </div>
+                </div>
+
+                <div class="footer-info-section">
+                    <h3>Horarios de Atención</h3>
+                    <div class="footer-info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="footer-info-text">
+                            <span>Lunes a Viernes</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                            <span>Sábados</span>
+                            <span>10:00 AM - 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-info-section">
+                    <h3>Síguenos</h3>
+                    <div class="footer-social-icons">
+                        <a href="#" class="footer-social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <img src="assets/icons/logo-footer.svg" alt="Logo">
         <div class="footer-copyright">
-            <p>Todos los derechos reservados © 2025 - Grupo JFF</p>
+            <p> © 2025 JFF Construcciones. Todos los derechos reservados.</p>
         </div>
     </footer>
 
