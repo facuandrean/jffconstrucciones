@@ -824,7 +824,9 @@ p {
     align-items: center;
 }
 
-.footer-info-whatsapp-icon {
+.footer-info-whatsapp-icon,
+.footer-info-location-icon,
+.footer-info-clock-icon {
     height: 1rem;
     width: 1rem;
 }
