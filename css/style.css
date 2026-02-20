@@ -812,7 +812,21 @@ p {
     font-size: 1rem;
     margin-top: 0.05rem;
     flex-shrink: 0;
-    
+
+    height: 100%;
+}
+
+.footer-info-whatsapp-icon-container {
+    height: 1.17rem;
+    width: 1.17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info-whatsapp-icon {
+    height: 1rem;
+    width: 1rem;
 }
 
 .footer-info-item span {
