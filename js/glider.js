@@ -1,5 +1,4 @@
 export function carousel() {
-
     new Glider(document.querySelector('.glider .glider-list'), {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -10,20 +9,6 @@ export function carousel() {
             next: '.glider-next'
         }
     });
-
-    // document.querySelectorAll('.glider').forEach((glider, index) => {
-    //     new Glider(glider.querySelector('.glider-list'), {
-    //         slidesToShow: 3,
-    //         slidesToScroll: 3,
-    //         draggable: false,
-    //         dots: glider.querySelector('.glider-indicators'),
-    //         arrows: {
-    //             prev: glider.querySelector('.glider-prev'),
-    //             next: glider.querySelector('.glider-next')
-    //         }
-    //     });
-    // });
-
 };
 
 export function carouselBefore () {
