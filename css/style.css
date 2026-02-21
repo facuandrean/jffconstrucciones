@@ -1266,6 +1266,10 @@ p {
         height: 100vh;
     }
 
+    .slider-btns {
+        display: flex;
+    }
+
     .about-us {
         margin: 0 auto;
         padding: 5rem 2rem 12rem 2rem;
