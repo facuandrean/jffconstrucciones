@@ -247,6 +247,86 @@ p {
     visibility: visible;
 }
 
+.slider-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 90%;
+    max-width: 800px;
+}
+
+.slider-slide-content span {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--first-color);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slider-slide-content h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.slider-slide-content p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.slider-slide-content button {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--black-color);
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider-slide-content button:hover {
+    background-color: #e6a800; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-slide-content button a {
+    text-decoration: none;
+    color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1rem;
+}
+
+.slider-slide-content button a:hover {
+    color: var(--black-color);
+    background-color: transparent;
+}
+
+
 .slider-btns {
     position: absolute;
     top: 50%;
@@ -958,6 +1038,23 @@ p {
 
     .presentation img {
         max-height: 250px;
+    }
+
+    .slider-slide-content span {
+        font-size: 1.25rem;
+    }
+
+    .slider-slide-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .slider-slide-content p {
+        font-size: 1.75rem;
+    }
+
+    .slider-slide-content button {
+        font-size: 1.25rem;
+        padding: 1rem 2.5rem;
     }
 
     .about-us {
