@@ -318,7 +318,7 @@ p {
     width: 100%;
     height: 100%;
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .slider-slide-content button a:hover {
@@ -334,9 +334,10 @@ p {
     height: auto;
     padding: 0 2rem;
 
-    display: flex;
     justify-content: space-between;
     align-items: center;
+
+    display: none;
 }
 
 .slider a {
@@ -1055,6 +1056,10 @@ p {
     .slider-slide-content button {
         font-size: 1.25rem;
         padding: 1rem 2.5rem;
+    }
+
+    .slider-btns {
+        display: flex;
     }
 
     .about-us {
