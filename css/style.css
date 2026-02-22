@@ -416,88 +416,173 @@ p {
 .about-us-content {
     width: 100%;
     margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about-us-text {
-    padding: 0rem 1rem;
-    margin-bottom: 20px;
-}
-
-.about-us-text p {
-    font-size: 1.2rem;
-    font-weight: 500;
+    padding: 0;
     font-family: var(--primary-font);
-    color: var(--text-color);
-}
-/* comentar todo esto si quiere solo la imagen al lado de texto quienes somos */
-.about-us-items-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    gap: 2rem;
-    margin-top: 2rem;
 }
 
-.about-us-item {
-    background-color: var(--white-color);
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+.about-us-list {
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+    padding: 1rem 1.5rem 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
-.about-us-item:hover {
-    transform: translateY(-5px);
+.about-member {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
-.about-us-item-img {
+.about-member-img {
     width: 100%;
-    height: 300px;
+    aspect-ratio: 1/1;
     overflow: hidden;
+    border-radius: 0.5rem;
 }
 
-.about-us-item-img img {
+.about-member-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    transition: transform 0.3s ease;
 }
 
-.about-us-item-text {
-    padding: 1.5rem;
-    text-align: center;
-    flex-grow: 1;
+.about-member-img:hover img {
+    transform: scale(1.05);
+}
+
+.about-member-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    gap: 1.5rem;
 }
 
-.about-us-item-text h3 {
-    font-size: 1.1rem;
-    font-weight: 900;
+.about-member-header {
+    border-left: 4px solid var(--first-color);
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-member-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--third-color);
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
     font-family: var(--primary-font);
-    color: var(--black-color);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
 }
 
-.about-us-item-text small {
-    font-size: 0.9rem;
+.about-member-header .role {
+    font-size: 1.125rem;
     font-weight: 500;
-    font-family: var(--primary-font);
-    color: var(--text-color);
-    display: block;
-    margin-bottom: 0.5rem;
+    color: var(--first-color);
 }
-/* hasta aca */
+
+.bio {
+    color: var(--third-alpha-color);
+    line-height: 1.625;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.specialties h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--gray-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.specialties .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.specialties .tags span {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    color: var(--third-alpha-color);
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+}
+
+.email-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--third-alpha-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    width: fit-content;
+}
+
+.email-link:hover {
+    color: #2563eb;
+}
+
+.about-footer {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 5rem;
+    padding-top: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-footer p {
+    font-size: 1.1rem;
+    color: var(--third-alpha-color);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .about-member {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .about-member:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .about-member-img {
+        width: 40%;
+    }
+
+    .about-member-content {
+        width: 60%;
+    }
+    
+    .about-member-header h3 {
+        font-size: 1.875rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-member-img {
+        width: 33.333%;
+    }
+
+    .about-member-content {
+        width: 66.666%;
+    }
+}
+
 .about-us-img img {
     min-height: 400px;
     max-height: 500px;
@@ -609,63 +694,149 @@ p {
 
 .jobs {
     width: 100%;
-    max-width: 500px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    min-height: auto;
-    padding: 1rem;
-    padding-bottom: 150px;
-
+    padding: 4rem 1rem;
     background-color: var(--white-color);
-
     position: relative;
     z-index: 990;
 }
 
 .jobs h2 {
-    margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
-.carousel-inner {
-    border-radius: .5rem;
+/* Jobs Grid System */
+.jobs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
 }
 
-.carousel-item {
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .jobs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .jobs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.job-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carousel-item img {
-    height: 600px;
-    border-radius: .5rem;
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px var(--box-shadow);
+}
 
+.job-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.job-card-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: 50% 0%;
+    transition: transform 0.5s ease;
 }
 
-.carousel-item .carousel-background {
+.job-card:hover .job-card-image img {
+    transform: scale(1.1);
+}
+
+.job-card-overlay {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
-    bottom: 0;
-    background-color: black;
-    opacity: .5;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: var(--white-color);
+    z-index: 2;
 }
 
-.carousel-item h3 {
-    font-size: 1.65rem;
-    font-family: var(--primary-font);
+.job-card:hover .job-card-overlay {
+    opacity: 1;
+}
+
+.job-overlay-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.job-overlay-date {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--gray-color);
+}
+
+.job-overlay-link {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--first-color);
+}
+
+.job-card-details {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--second-color);
+}
+
+.job-card-category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--first-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.job-card-title {
+    font-size: 1.25rem;
     font-weight: 700;
-}
-
-.carousel-item p {
-    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
     font-family: var(--primary-font);
-    font-weight: 300;
 }
 
-.glider {
-    display: none;
+.job-card-description {
+    font-size: 0.95rem;
+    color: var(--third-alpha-color);
+    line-height: 1.5;
+    margin: 0;
+    font-family: var(--primary-font);
 }
 
 .contact-us {
@@ -1045,6 +1216,13 @@ p {
     background-color: transparent;
 }
 
+.section-info {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
 .title-section {
     font-size: 2rem;
     text-align: center;
@@ -1055,6 +1233,20 @@ p {
     border-bottom: 5px solid var(--first-color);
     min-width: 10ch;
     max-width: 15ch;
+    margin: 0 auto 50px;
+    padding: .5rem;
+}
+
+.section-info .title-section {
+    margin: 0 auto 20px;
+}
+
+.description-section {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--text-color);
     margin: 0 auto 50px;
     padding: .5rem;
 }
@@ -1333,6 +1525,10 @@ p {
         max-width: 1280px;
         /* esto descomentarlo si quiere una sola imagen al lado del texto de quienes somos */
         /* flex-direction: row;  Removed to keep column layout for title + cards */
+    }
+
+    .about-us-text p {
+        font-size: 1.35rem;
     }
 
     /* .about-us-text and .about-us-img styles removed as they are replaced */
