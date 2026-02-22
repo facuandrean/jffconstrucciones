@@ -391,6 +391,15 @@ p {
 
     position: relative;
     z-index: 990;
+
+    margin-bottom: 2.5rem;
+}
+
+.presentation-content {
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 10rem;
 }
 
 .presentation h1 {
@@ -424,7 +433,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 1rem 1.5rem 1rem;
+    padding: 1rem 0rem;
     max-width: var(--max-width);
     margin: 0 auto;
 }
