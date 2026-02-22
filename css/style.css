@@ -292,8 +292,10 @@ p {
     margin-bottom: 2rem;
 }
 
-.slider-slide-content button {
+.btn-slider {
     padding: 0.75rem 2rem;
+    min-width: 200px;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: 700;
     font-family: var(--primary-font);
@@ -304,26 +306,15 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-block;
 }
 
-.slider-slide-content button:hover {
+.btn-slider:hover {
     background-color: #e6a800; 
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.slider-slide-content button a {
-    text-decoration: none;
     color: var(--black-color);
-    width: 100%;
-    height: 100%;
-    display: block;
-    font-size: 1.1rem;
-}
-
-.slider-slide-content button a:hover {
-    color: var(--black-color);
-    background-color: transparent;
 }
 
 
@@ -340,7 +331,7 @@ p {
     display: none;
 }
 
-.slider a {
+.slider-btns a {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -356,12 +347,12 @@ p {
     transition: all .5s ease;
 }
 
-.slider a:hover {
+.slider-btns a:hover {
     color: var(--white-color);
     background-color: var(--black-alpha-second-color);
 }
 
-.slider a i {
+.slider-btns a i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,7 +434,70 @@ p {
     font-family: var(--primary-font);
     color: var(--text-color);
 }
+/* comentar todo esto si quiere solo la imagen al lado de texto quienes somos */
+.about-us-items-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
+.about-us-item {
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-item:hover {
+    transform: translateY(-5px);
+}
+
+.about-us-item-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.about-us-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-us-item-text {
+    padding: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-us-item-text h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: var(--primary-font);
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.about-us-item-text small {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+/* hasta aca */
 .about-us-img img {
     min-height: 400px;
     max-height: 500px;
@@ -598,14 +652,14 @@ p {
     opacity: .5;
 }
 
-.carousel-item h5 {
-    font-size: 1.8rem;
+.carousel-item h3 {
+    font-size: 1.65rem;
     font-family: var(--primary-font);
     font-weight: 700;
 }
 
 .carousel-item p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-family: var(--primary-font);
     font-weight: 300;
 }
@@ -1053,7 +1107,7 @@ p {
         font-size: 1.75rem;
     }
 
-    .slider-slide-content button {
+    .btn-slider {
         font-size: 1.25rem;
         padding: 1rem 2.5rem;
     }
@@ -1277,16 +1331,14 @@ p {
 
     .about-us-content {
         max-width: 1280px;
-        flex-direction: row;
+        /* esto descomentarlo si quiere una sola imagen al lado del texto de quienes somos */
+        /* flex-direction: row;  Removed to keep column layout for title + cards */
     }
 
-    .about-us-text {
-        margin-bottom: 0px;
-        width: 40%;
-    }
+    /* .about-us-text and .about-us-img styles removed as they are replaced */
 
-    .about-us-img {
-        width: 55%;
+    .about-us-items-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .skewed {
