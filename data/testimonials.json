@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "quote": "La remodelación del hotel quedó increíble. Cada espacio fue pensado para la comodidad de nuestros huéspedes. Recibimos comentarios positivos constantemente sobre el nuevo diseño.",
+    "rating": 3,
+    "author": "Ana Martínez",
+    "role": "Gerente de Operaciones - Hotel Boutique Centro",
+    "project": "RENOVACIÓN HOTEL BOUTIQUE"
+  },
+  {
+    "id": 2,
+    "quote": "Excelente trabajo en la construcción de nuestra casa. El equipo fue muy profesional y cumplió con todos los plazos acordados. Superaron nuestras expectativas.",
+    "rating": 5,
+    "author": "Carlos Ruiz",
+    "role": "Propietario - Vivienda Unifamiliar",
+    "project": "CONSTRUCCIÓN VIVIENDA"
+  },
+  {
+    "id": 3,
+    "quote": "Gracias a JFF Construcciones pudimos renovar nuestras oficinas. El diseño moderno y funcional ha mejorado el ambiente de trabajo para todo el equipo.",
+    "rating": 5,
+    "author": "Laura Gómez",
+    "role": "Directora de RRHH - Tech Solutions",
+    "project": "REMODELACIÓN OFICINAS"
+  },
+  {
+    "id": 4,
+    "quote": "La atención personalizada y el asesoramiento durante todo el proyecto fue clave. Lograron interpretar nuestras ideas y plasmarlas en cada detalle.",
+    "rating": 5,
+    "author": "Martín Fernández",
+    "role": "Dueño - Local Comercial",
+    "project": "LOCAL COMERCIAL"
+  }
+]

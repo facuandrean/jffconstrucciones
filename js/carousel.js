@@ -9,7 +9,6 @@ export function slider() {
     let touchEndX;
 
     function autoSlide() {
-        
         $slides[i].classList.remove('active');
         i++;
 
