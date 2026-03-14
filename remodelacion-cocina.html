@@ -68,8 +68,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -125,7 +124,7 @@
         </section>
 
         <section class="information">
-            <h2>Descripción del trabajo</h2>
+            <h2>Detalles del proyecto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, odit eligendi. Voluptatem omnis ad illo
                 repellendus, atque inventore. Sint voluptas asperiores totam commodi doloremque qui at accusamus
                 obcaecati aperiam earum.</p>
@@ -137,392 +136,63 @@
                 obcaecati aperiam earum.</p>
         </section>
 
-        <section class="fotographies fotographies-mobile">
-            <h2>¡Mira algunas imágenes del proceso de remodelación!</h2>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-001.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-002.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-003.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-004.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-005.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-006.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-007.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-008.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-009.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-010.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-011.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-012.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-cocina/construction-img-013.avif"
-                            class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
+        <section class="gallery-section">
+            <h2>Galería del proyecto</h2>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-001.avif" alt="Remodelación Cocina 1" loading="lazy">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-002.avif" alt="Remodelación Cocina 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-003.avif" alt="Remodelación Cocina 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-004.avif" alt="Remodelación Cocina 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-005.avif" alt="Remodelación Cocina 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-006.avif" alt="Remodelación Cocina 6" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-007.avif" alt="Remodelación Cocina 7" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-008.avif" alt="Remodelación Cocina 8" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-009.avif" alt="Remodelación Cocina 9" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-010.avif" alt="Remodelación Cocina 10" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-011.avif" alt="Remodelación Cocina 11" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-012.avif" alt="Remodelación Cocina 12" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/remodelacion-cocina/construction-img-013.avif" alt="Remodelación Cocina 13" loading="lazy">
+                </div>
             </div>
+
+            <button id="load-more-btn" class="btn-load-more">Cargar más</button>
         </section>
 
-        <section class="fotographies fotographies-desktop">
-            <h2>¡Mira algunas imágenes del proceso de remodelación!</h2>
-            <div class="glider">
-                <div class="glider-container jobs-container-desktop">
-                    <button aria-label="Anterior" class="glider-prev">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <div class="glider-list">
-                        <a href="#first-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-001.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#second-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-002.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#third-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-003.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#fourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-004.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#fifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-005.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-
-                        <a href="#sixth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-006.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#seventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-007.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#eighth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-008.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#ninth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-009.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#tenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-010.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#eleventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-011.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#twelfth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-012.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#thirteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-cocina/construction-img-013.avif"
-                                    class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-                    </div>
-                    <button aria-label="Siguiente" class="glider-next">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                <div role="tablist" class="glider-indicators"></div>
+        <!-- Modal para Lightbox -->
+        <div id="gallery-modal" class="gallery-modal">
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <button class="modal-nav prev" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="modal-image-container">
+                <img id="modal-img" src="" alt="Imagen ampliada">
             </div>
-
-            <div class="modal fade modal-lg" id="first-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-001.avif" class="d-block w-100"
-                                alt="Construcción">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="second-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-002.avif" class="d-block w-100"
-                                alt="Construcción">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="third-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-003.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="fourth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-004.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="fifth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-005.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="sixth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-006.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="seventh-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-007.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="eighth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-008.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="ninth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-009.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="tenth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-010.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="eleventh-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-011.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="twelfth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-012.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="thirteenth-image" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-cocina/construction-img-013.avif" class="d-block w-100"
-                                alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <button class="modal-nav next" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
 
     </main>
 
@@ -591,11 +261,6 @@
             <p>Todos los derechos reservados © 2024 - Grupo JFF</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <script src="/js/main_job.js" type="module"></script>
     <script src="/js/modal-zoom.js"></script>
 </body>

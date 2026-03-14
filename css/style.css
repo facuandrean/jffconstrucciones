@@ -229,7 +229,7 @@ p {
     top: 0;
     left: 0;
 
-    opacity: 0;
+    opacity: .8;
     visibility: hidden;
     transition: opacity 1s ease;
 }
@@ -264,7 +264,7 @@ p {
 }
 
 .slider-slide-content span {
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight: 700;
     font-family: var(--primary-font);
     color: var(--first-color);
@@ -275,7 +275,7 @@ p {
 }
 
 .slider-slide-content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
     font-family: var(--primary-font);
     color: var(--white-color);
@@ -284,7 +284,7 @@ p {
 }
 
 .slider-slide-content p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 500;
     font-family: var(--primary-font);
     color: var(--white-color);
@@ -558,7 +558,7 @@ p {
 }
 
 /* Desktop styles */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .about-member {
         flex-direction: row;
         gap: 3rem;
@@ -1233,7 +1233,7 @@ p {
 }
 
 .title-section {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     font-family: var(--primary-font);
     font-weight: 900;
@@ -1269,15 +1269,15 @@ p {
 @media (640px <=width < 1024px) {
 
     .header {
-        height: calc(var(--header-height) + 20px);
+        height: var(--header-height);
     }
 
     .header .logo img {
-        max-height: 85%;
+        max-height: 70%;
     }
 
     .nav-mobile ul {
-        top: calc(var(--header-height) + 20px);
+        top: var(--header-height);
     }
 
     .nav-mobile ul li {
@@ -1285,36 +1285,31 @@ p {
     }
 
     .nav-mobile ul a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-
-    .presentation h1 {
-        font-size: 4.2rem;
-    }
-
-    .presentation img {
-        max-height: 250px;
-    }
-
+    
     .slider-slide-content span {
-        font-size: 1.25rem;
+        font-size: 1rem !important;
     }
-
+    
     .slider-slide-content h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem !important;
     }
-
+    
     .slider-slide-content p {
-        font-size: 1.75rem;
+        font-size: 1.35rem !important;
     }
-
+    
     .btn-slider {
-        font-size: 1.25rem;
-        padding: 1rem 2.5rem;
+        transition: all 0.1s ease;
     }
-
+    
     .slider-btns {
-        display: flex;
+        display: none !important;
+    }
+    
+    .presentation img {
+        max-height: 160px;
     }
 
     .about-us {
@@ -1326,11 +1321,11 @@ p {
     }
 
     .title-section {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about-us-content p {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     .services h2 {
@@ -1343,7 +1338,7 @@ p {
     }
 
     .service h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .service p {
@@ -1371,8 +1366,7 @@ p {
     }
 
     .contact-form > input {
-        padding: 1rem;
-        /* margin: .5rem auto; */
+        padding: .5rem;
     }
 
     .contact-form > span {
@@ -1428,7 +1422,7 @@ p {
         text-align: center;
         color: var(--gray-color);
         font-family: var(--primary-font);
-        font-size: 1.2rem;
+        font-size: .85rem;
     }
 
     .footer-info {
@@ -2090,7 +2084,7 @@ p {
 }
 
 .testimonials-cta a:hover {
-    color: var(--third-color);
+    color: #464646;
 }
 
 /* Loader */

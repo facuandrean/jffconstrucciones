@@ -1,22 +1,13 @@
-import { btnNav } from './btn-nav.js';
-import { carousel, carouselBefore, carouselAfter } from './glider.js';
 import { header } from './header.js';
-import { loader } from './img.js';
+import { btnNav } from './btn-nav.js';
 import { nav } from './nav.js';
-
-const $gliderBefore = document.querySelector('#glider-before');
-const $gliderAfter = document.querySelector('#glider-after');
+import { loader } from './img.js';
+import { gallery } from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     header();
     btnNav();
     nav();
-    // carousel();
-    if (!($gliderAfter === null || $gliderBefore === null)) {
-        carouselAfter();
-        carouselBefore();
-    } else {
-        carousel();
-    }
+    gallery();
     loader();
 })
